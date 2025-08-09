@@ -15,7 +15,7 @@ public class TestRunner {
 
     @Karate.Test
     public Karate runnerTest(){
-        return Karate.run("classpath:api").tags("@Test").relativeTo(getClass());
+        return Karate.run("classpath:api").tags("@sanity").relativeTo(getClass());
     }
 
     @Test
